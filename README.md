@@ -11,7 +11,7 @@ A Windows BepInEx mod for **Lofi Aquarium**, featuring configurable currencies, 
 - 自定义彩鱼币 / 幻彩币（`coin_3`）
 - 自定义潜艇等级，饲料 XP 自动设为潜艇等级 + 2
 - 自定义当前鱼缸显示容量
-- 锁定商城鱼苗的指定鱼种（1–100）与品级（普彩 / 金彩 / 幻彩）
+- 锁定商城鱼苗的指定鱼种（1-100）与品级（普彩 / 金彩 / 幻彩）
 - 获得卡片、鱼缸实体、存档与卖出任务使用同一份指定鱼数据
 - F5 打开设置窗口，F7 切换自动补充
 
@@ -23,9 +23,20 @@ A Windows BepInEx mod for **Lofi Aquarium**, featuring configurable currencies, 
 
 ## 下载与安装
 
-1. 下载仓库中的 `LofiAquarium_CustomMod_v2.6.0.zip`。
-2. 完全退出游戏。
-3. 解压后，把压缩包内的全部内容复制到游戏根目录：
+当前仓库提供的是安装包的 base64 文本版：`LofiAquarium_CustomMod_v2.6.0.zip.base64.txt`。
+
+在 Windows PowerShell 里把它还原为 zip：
+
+```powershell
+$b64 = Get-Content .\LofiAquarium_CustomMod_v2.6.0.zip.base64.txt -Raw
+[IO.File]::WriteAllBytes("LofiAquarium_CustomMod_v2.6.0.zip", [Convert]::FromBase64String($b64))
+```
+
+然后安装：
+
+1. 完全退出游戏。
+2. 解压 `LofiAquarium_CustomMod_v2.6.0.zip`。
+3. 把压缩包内的全部内容复制到游戏根目录：
 
    ```text
    C:\Program Files (x86)\Steam\steamapps\common\LofiAquarium
@@ -79,4 +90,3 @@ BepInEx\plugins\LofiAquariumCoinMod.dll
 ## 说明
 
 这是玩家制作的非官方 Mod，与游戏开发者及 Steam 无隶属关系。修改存档前建议自行备份。
-
