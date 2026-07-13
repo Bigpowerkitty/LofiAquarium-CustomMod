@@ -23,20 +23,9 @@ A Windows BepInEx mod for **Lofi Aquarium**, featuring configurable currencies, 
 
 ## 下载与安装
 
-当前仓库提供的是安装包的 base64 文本版：`LofiAquarium_CustomMod_v2.6.0.zip.base64.txt`。
-
-在 Windows PowerShell 里把它还原为 zip：
-
-```powershell
-$b64 = Get-Content .\LofiAquarium_CustomMod_v2.6.0.zip.base64.txt -Raw
-[IO.File]::WriteAllBytes("LofiAquarium_CustomMod_v2.6.0.zip", [Convert]::FromBase64String($b64))
-```
-
-然后安装：
-
-1. 完全退出游戏。
-2. 解压 `LofiAquarium_CustomMod_v2.6.0.zip`。
-3. 把压缩包内的全部内容复制到游戏根目录：
+1. 下载仓库中的 `LofiAquarium_CustomMod_v2.6.0.zip`。
+2. 完全退出游戏。
+3. 解压后，把压缩包内的全部内容复制到游戏根目录：
 
    ```text
    C:\Program Files (x86)\Steam\steamapps\common\LofiAquarium
@@ -50,6 +39,12 @@ $b64 = Get-Content .\LofiAquarium_CustomMod_v2.6.0.zip.base64.txt -Raw
    ```
 
 5. 从 Steam 正常启动游戏。首次启动 BepInEx 可能稍慢。
+
+压缩包校验值 SHA256：
+
+```text
+B19C34FD5464F2C5E312C38A1A843F36C78C9479594D86E49B7348EF1A23DED7
+```
 
 ## 使用方法
 
