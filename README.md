@@ -1,8 +1,8 @@
-# 洛菲水族馆 · Lofi Aquarium Custom Mod
+# 洛菲水族馆 Mod · Lofi Aquarium Custom Mod
 
-《洛菲水族馆 / Lofi Aquarium》的 Windows BepInEx 自定义 Mod，支持修改购买鱼苗金币、星星币、彩鱼币、潜艇等级、鱼缸容量，以及锁定商城购买的指定鱼种与品级。
+适用于 Steam 游戏《洛菲水族馆 / Lofi Aquarium》的 BepInEx 自定义 Mod。关键词：洛菲水族馆mod、洛菲水族馆修改器、Lofi Aquarium mod、Lofi Aquarium trainer、Steam Lofi Aquarium、BepInEx mod。
 
-A Windows BepInEx mod for **Lofi Aquarium**, featuring configurable currencies, submarine level, aquarium capacity, and targeted fish/quality purchases.
+This is a Windows BepInEx mod for **Lofi Aquarium** on Steam, featuring configurable currencies, submarine level, aquarium capacity, and targeted fish/quality purchases.
 
 ## 功能
 
@@ -23,7 +23,7 @@ A Windows BepInEx mod for **Lofi Aquarium**, featuring configurable currencies, 
 
 ## 下载与安装
 
-1. 下载仓库中的 `LofiAquarium_CustomMod_v2.6.0.zip`。
+1. 下载仓库中的 [`LofiAquarium_CustomMod_v2.6.0.zip`](LofiAquarium_CustomMod_v2.6.0.zip)。
 2. 完全退出游戏。
 3. 解压后，把压缩包内的全部内容复制到游戏根目录：
 
@@ -69,6 +69,10 @@ BepInEx\config\cn.codex.lofiaquarium.coinmod.cfg
 ```text
 BepInEx\LogOutput.log
 ```
+
+## 适用搜索关键词
+
+洛菲水族馆mod、洛菲水族馆修改器、洛菲水族馆金币mod、洛菲水族馆鱼苗mod、Lofi Aquarium mod、Lofi Aquarium BepInEx、Steam Lofi Aquarium mod。
 
 ## 源码与构建
 
